@@ -1,0 +1,61 @@
+# to activate conda in command prompt:
+set PATH=%PATH%;C:\Users\user\anaconda3;C:\Users\user\anaconda3\Scripts\ 
+
+cd C:\Users\user\Desktop\ECE4078-G4\M5_CHRIS\M3
+python operate_SLAM.py --ip 192.168.137.81 --port 8000
+python generate_estimated_ARUCO.py --tf 1
+python operate_CV.py --ip 192.168.137.81 --port 8000
+python generate_estimated_FRUIT.py --tf 1
+python SLAM_eval.py TRUEMAP.txt lab_output/slam.txt
+python .\CJS_auto_fruit_search_L2.py --ip 192.168.137.81 --port 8000
+
+
+// 20.10.22 RUN
+ARUCO
+Number of found markers: 10
+RMSE before alignment: 0.7638240450759014
+(robot pose TF) RMSE after alignment:  0.1098240243751531
+(umeyama TF) RMSE after alignment:  0.08812326271088229
+Map score: 15.933518644172555 / 20
+
+
+// 21.10.22 RUN
+> X coordinate of the robot at final position: 0.15
+> Y coordinate of the robot at final position: -1.4
+> Angle (rad) of the robot at final position: 1.97222
+ARUCO
+Number of found markers: 10
+RMSE before alignment: 1.0440104416781462
+(robot pose TF) RMSE after alignment:  0.05401077208048937
+(umeyama TF) RMSE after alignment:  0.043966314166425643
+Map score: 20.64359315558126 / 20
+
+FRUIT
+Number of found fruits: 5
+RMSE before alignment: 0.09539022194760628
+(robot pose TF) RMSE after alignment:  0.09539022194760628
+(umeyama TF) RMSE after alignment:  0.1199936004708064
+Target score: 18.884913988877695 / 20
+
+// 25.10.22 RUN
+ARUCO
+Number of found markers: 10
+RMSE before alignment: 1.0440104416781462
+(robot pose TF) RMSE after alignment:  0.05401077208048937
+(umeyama TF) RMSE after alignment:  0.043966314166425643
+Map score: 20.64359315558126 / 20
+
+FRUIT
+Number of found fruits: 5
+RMSE before alignment: 0.09539022194760628
+(robot pose TF) RMSE after alignment:  0.09539022194760628
+(umeyama TF) RMSE after alignment:  0.1199936004708064
+Target score: 18.884913988877695 / 20
+
+// 26.10.22 RUN
+ARUCO
+Number of found markers: 10
+RMSE before alignment: 2.2479119056445724
+(robot pose TF) RMSE after alignment:  0.06884790284655101
+(umeyama TF) RMSE after alignment:  0.052836157930643605
+Map score: 19.697476487398013 / 20
