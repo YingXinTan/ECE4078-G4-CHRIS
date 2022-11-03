@@ -1,5 +1,5 @@
 # ECE4078-G4-FINALISED
-## Monash University Malaysia ECE4078
+## Monash University Malaysia ECE4078 (Copy)
 Program an Alphabot to generate a predicted map of a randomised 'True Map' and identify the positions of 5 different fruits on it. Perform path planning with the current robot's position predicted using an Extended Kalman Filter (EKF) to 'collect' only 3 out of the 5 targeted fruits while avoiding any obstacles.
 
 ## Collaboraters:
